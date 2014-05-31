@@ -1,0 +1,12 @@
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\bin\Debug\BLL.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\bin\Debug\BLL.pdb
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\bin\Debug\DAL.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\bin\Debug\FrameworkBLL.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\bin\Debug\FrameworkModel.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\bin\Debug\Model.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\bin\Debug\FrameworkDAL.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\bin\Debug\DAL.pdb
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\bin\Debug\Model.pdb
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\obj\Debug\BLL.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\BLL\obj\Debug\BLL.pdb
