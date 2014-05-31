@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<configuration>
+  <connection>
+    <name>homologacao</name>
+    <server>srvhomolog.cipec.net</server>
+    <user>root</user>
+    <password>beleza</password>
+    <database>homocipec</database>
+  </connection>
+</configuration>
