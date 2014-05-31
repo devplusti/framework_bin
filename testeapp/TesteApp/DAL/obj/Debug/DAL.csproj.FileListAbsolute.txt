@@ -1,0 +1,9 @@
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\DAL\bin\Debug\DAL.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\DAL\bin\Debug\DAL.pdb
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\DAL\bin\Debug\FrameworkDAL.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\DAL\bin\Debug\FrameworkModel.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\DAL\bin\Debug\Model.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\DAL\bin\Debug\Model.pdb
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\DAL\obj\Debug\DAL.dll
+C:\Users\elton\Dropbox\aulas_c\projetos\TesteApp\DAL\obj\Debug\DAL.pdb
