@@ -34,19 +34,15 @@
   <ItemGroup>
     <Reference Include="FrameworkBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\FrameworkBLL.dll</HintPath>
-    </Reference>
-    <Reference Include="FrameworkDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\FrameworkDAL.dll</HintPath>
+      <HintPath>..\..\framework-bin\Binarios\FrameworkBLL.dll</HintPath>
     </Reference>
     <Reference Include="FrameworkModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\FrameworkModel.dll</HintPath>
+      <HintPath>..\..\framework-bin\Binarios\FrameworkModel.dll</HintPath>
     </Reference>
     <Reference Include="FrameworkUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\FrameworkUI.dll</HintPath>
+      <HintPath>..\..\framework-bin\Binarios\FrameworkUI.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Security">
       <HintPath>..\..\teste\Binarios\Mono.Security.dll</HintPath>
@@ -119,6 +115,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{279532eb-f0af-4604-b00a-9cd0424d18e4}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{b6d8510f-f465-4a91-ac37-01451fb651f5}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

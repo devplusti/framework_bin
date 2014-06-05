@@ -33,12 +33,18 @@
             this.testeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.parserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cotapForneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.funcionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaDadosCadastraisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrosToolStripMenuItem,
             this.testeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -52,16 +58,17 @@
             this.testeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.testeToolStripMenuItem1,
             this.parserToolStripMenuItem,
-            this.cotapForneToolStripMenuItem});
+            this.cotapForneToolStripMenuItem,
+            this.usuáriosToolStripMenuItem});
             this.testeToolStripMenuItem.Name = "testeToolStripMenuItem";
-            this.testeToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
-            this.testeToolStripMenuItem.Text = "Teste";
+            this.testeToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.testeToolStripMenuItem.Text = "Manutenção";
             // 
             // testeToolStripMenuItem1
             // 
             this.testeToolStripMenuItem1.Name = "testeToolStripMenuItem1";
             this.testeToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.testeToolStripMenuItem1.Text = "Teste";
+            this.testeToolStripMenuItem1.Text = "Formulários";
             this.testeToolStripMenuItem1.Click += new System.EventHandler(this.testeToolStripMenuItem1_Click);
             // 
             // parserToolStripMenuItem
@@ -77,6 +84,40 @@
             this.cotapForneToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cotapForneToolStripMenuItem.Text = "CotapForne";
             this.cotapForneToolStripMenuItem.Click += new System.EventHandler(this.cotapForneToolStripMenuItem_Click);
+            // 
+            // usuáriosToolStripMenuItem
+            // 
+            this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuáriosToolStripMenuItem.Text = "Usuários";
+            // 
+            // cadastrosToolStripMenuItem
+            // 
+            this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.funcionáriosToolStripMenuItem,
+            this.consultaDadosCadastraisToolStripMenuItem,
+            this.relatóriosToolStripMenuItem});
+            this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.cadastrosToolStripMenuItem.Text = "Cadastros";
+            // 
+            // funcionáriosToolStripMenuItem
+            // 
+            this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
+            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.funcionáriosToolStripMenuItem.Text = "Funcionários";
+            // 
+            // consultaDadosCadastraisToolStripMenuItem
+            // 
+            this.consultaDadosCadastraisToolStripMenuItem.Name = "consultaDadosCadastraisToolStripMenuItem";
+            this.consultaDadosCadastraisToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.consultaDadosCadastraisToolStripMenuItem.Text = "Consulta Dados Cadastrais";
+            // 
+            // relatóriosToolStripMenuItem
+            // 
+            this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.relatóriosToolStripMenuItem.Text = "Relatórios";
             // 
             // frmPrincipal
             // 
@@ -105,5 +146,10 @@
         private System.Windows.Forms.ToolStripMenuItem testeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem parserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cotapForneToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem funcionáriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultaDadosCadastraisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
     }
 }

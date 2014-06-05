@@ -6,7 +6,7 @@ using System.Text;
 
 namespace BLL
 {
-    public class CotapforneBLL : Framework.BLL<CotapforneModel>, Framework.IBLL
+    public class CotapforneBLL : FrameworkBLL.Framework.BLL<CotapforneModel>, FrameworkBLL.Framework.IBLL
     {
 
     }

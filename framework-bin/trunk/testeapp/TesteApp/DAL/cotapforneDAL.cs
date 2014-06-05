@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DAL
 {
-    public class CotapforneDAL : Framework.DAL<CotapforneModel>
+    public class CotapforneDAL : FrameworkDAL.Framework.DAL<CotapforneModel>
     {
 
     }
