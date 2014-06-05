@@ -30,11 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FrameworkDAL">
-      <HintPath>..\FrameworkDAL.dll</HintPath>
+    <Reference Include="FrameworkDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\framework-bin\Binarios\FrameworkDAL.dll</HintPath>
     </Reference>
-    <Reference Include="FrameworkModel">
-      <HintPath>..\FrameworkModel.dll</HintPath>
+    <Reference Include="FrameworkModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\framework-bin\Binarios\FrameworkModel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

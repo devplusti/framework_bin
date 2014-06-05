@@ -1,4 +1,6 @@
 ﻿using BLL;
+using FrameworkBLL;
+using FrameworkModel;
 using FrameworkUI;
 using Model;
 using System;
@@ -56,6 +58,19 @@ namespace Teste
             {
             }
             
+        }
+
+        private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            MessageBox.Show(dataGridView1[dataGridView1.CurrentCellAddress.Y, dataGridView1.CurrentCellAddress.X].Value.ToString());
+
+            //linha atual   - dataGridView1.CurrentCell.RowIndex
+            //caoluna atual - dataGridView1.CurrentCellAddress.Y
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

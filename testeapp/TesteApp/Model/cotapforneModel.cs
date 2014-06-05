@@ -1,4 +1,4 @@
-﻿using Model.Framework;
+﻿using FrameworkModel.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Model
 {
-    public class CotapforneModel : Framework.Model
+    public class CotapforneModel : FrameworkModel.Framework.Model
     {
         public CotapforneModel()
         {

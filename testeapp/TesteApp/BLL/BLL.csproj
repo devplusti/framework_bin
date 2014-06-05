@@ -30,11 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FrameworkBLL">
-      <HintPath>..\FrameworkBLL.dll</HintPath>
+    <Reference Include="FrameworkBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\framework-bin\Binarios\FrameworkBLL.dll</HintPath>
     </Reference>
-    <Reference Include="FrameworkModel">
-      <HintPath>..\FrameworkModel.dll</HintPath>
+    <Reference Include="FrameworkDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\framework-bin\Binarios\FrameworkDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameworkModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\framework-bin\Binarios\FrameworkModel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

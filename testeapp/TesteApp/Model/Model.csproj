@@ -7,7 +7,7 @@
     <ProjectGuid>{B6D8510F-F465-4A91-AC37-01451FB651F5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Model</RootNamespace>
+    <RootNamespace>tstModel</RootNamespace>
     <AssemblyName>Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -30,8 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FrameworkModel">
-      <HintPath>..\FrameworkModel.dll</HintPath>
+    <Reference Include="FrameworkModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\framework-bin\Binarios\FrameworkModel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
