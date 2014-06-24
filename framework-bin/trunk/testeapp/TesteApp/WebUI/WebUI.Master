@@ -1,0 +1,371 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WebUI.master.cs" Inherits="WebUI.WebUI" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Semetra.Net versão Beta</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        body {
+            background: #B4B4B4 url(images/body_bg.gif) repeat left top;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 110%;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        p, h1, h2, h3, h4, ul, li, table {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        h3 {
+            font-size: small;
+        }
+
+        a:link, a:visited, a:active {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        #main {
+            min-height: 500px;
+            margin: 0px;
+            padding: 0px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row;
+            flex-flow: row;
+        }
+
+            #main > article {
+                margin: 4px;
+                padding: 5px;
+                border: 1px solid #cccc33;
+                border-radius: 7pt;
+                background: white;
+                -webkit-flex: 3 1 60%;
+                flex: 3 1 60%;
+                -webkit-order: 2;
+                order: 2;
+            }
+
+            #main > nav {
+                margin: 4px;
+                padding: 5px;
+                border: 1px solid #8888bb;
+                border-radius: 7pt;
+                background: #ccccff;
+                -webkit-flex: 1 6 20%;
+                flex: 1 6 20%;
+                -webkit-order: 1;
+                order: 1;
+            }
+
+            #main > aside {
+                margin: 4px;
+                padding: 5px;
+                border: 1px solid #8888bb;
+                border-radius: 7pt;
+                background: #ccccff;
+                -webkit-flex: 1 6 20%;
+                flex: 1 6 20%;
+                -webkit-order: 3;
+                order: 3;
+            }
+
+        header, footer {
+            display: block;
+            margin: 0px 0px 5px 0px;
+            padding: 0px 0px 5px 0px;
+            height: 70px;
+            border: 1px solid #666666;
+            border-radius: 0pt;
+            background: #666666;
+        }
+
+        /* Too narrow to support three columns */
+        @media all and (max-width: 640px) {
+
+            #main, #page {
+                -webkit-flex-flow: column;
+                flex-flow: column;
+                flex-direction: column;
+            }
+
+                #main > article, #main > nav, #main > aside {
+                    /* Return them to document order */
+                    -webkit-order: 0;
+                    order: 0;
+                }
+
+                #main > nav, #main > aside, header, footer {
+                    min-height: 50px;
+                    max-height: 50px;
+                }
+        }
+
+        .term {
+            font-family: FixedsysExcelsior301Regular,fixedsys,"Courier New",courier,fixed,monospace;
+            font-size: 16px;
+            color: #3cbd1e;
+            background: none;
+            line-height: 15px;
+        }
+
+            .term .termReverse {
+                color: #000;
+                background: #adabad;
+            }
+
+        #terminal {
+            margin-bottom: 4em;
+            clear: both;
+            min-height: 379px;
+            vertical-align: bottom;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            height: 85px;
+        }
+
+        .flex-item:nth-child(1) {
+            order: 1;
+            margin: 5px;
+            border-radius: 10px;
+            background-color: white;
+            min-height: 65px;
+        }
+
+        .flex-item:nth-child(2) {
+            order: 2;
+            margin: 5px;
+            border-radius: 10px;
+            /*border: 5px solid red;*/
+            background-color: white;
+            min-height: 65px;
+            width: 60%;
+            text-align: end;
+        }
+
+        .flex-item:nth-child(3) {
+            order: 3;
+            margin: 5px;
+            border-radius: 10px;
+            /*border: 5px solid red;*/
+            background-color: black;
+            width: 250px;
+            min-height: 65px;
+            text-align: start;
+        }
+
+
+        .accordionHeader {
+            border: 1px solid #2F4F4F;
+            color: white;
+            background-color: #2E4d7B;
+            font-family: Arial, Sans-Serif;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        .accordionHeaderSelected {
+            border: 1px solid #2F4F4F;
+            color: white;
+            background-color: #5078B3;
+            font-family: Arial, Sans-Serif;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        .accordionContent {
+            background-color: #D3DEEF;
+            border: 1px dashed #2F4F4F;
+            border-top: none;
+            padding: 5px;
+            padding-top: 10px;
+        }
+
+        .Grid {
+            background-color: #fff;
+            margin: 5px 0 10px 0;
+            border: solid 1px #525252;
+            border-collapse: collapse;
+            font-family: Calibri;
+            color: #474747;
+        }
+
+            .Grid td {
+                padding: 2px;
+                border: solid 1px #c1c1c1;
+            }
+
+            .Grid th {
+                padding: 4px 2px;
+                color: #fff;
+                background: #363670 url(Images/grid-header.png) repeat-x top;
+                border-left: solid 1px #525252;
+                font-size: 0.9em;
+            }
+
+            .Grid .alt {
+                background: #fcfcfc url(Images/grid-alt.png) repeat-x top;
+            }
+
+            .Grid .pgr {
+                background: #363670 url(Images/grid-pgr.png) repeat-x top;
+            }
+
+                .Grid .pgr table {
+                    margin: 3px 0;
+                }
+
+                .Grid .pgr td {
+                    border-width: 0;
+                    padding: 0 6px;
+                    border-left: solid 1px #666;
+                    font-weight: bold;
+                    color: #fff;
+                    line-height: 12px;
+                }
+
+                .Grid .pgr a {
+                    color: Gray;
+                    text-decoration: none;
+                }
+
+                    .Grid .pgr a:hover {
+                        color: #000;
+                        text-decoration: none;
+                    }
+
+        .rounded_corners {
+            border: 1px solid #A1DCF2;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+            .rounded_corners td, .rounded_corners th {
+                border: 1px solid #A1DCF2;
+                font-family: Arial;
+                font-size: 10pt;
+                text-align: left;
+            }
+
+            .rounded_corners table table td {
+                border-style: none;
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <asp:Panel ID="tituloPanel" runat="server">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <a title="Semetra.Net Versão Beta" href="../home.aspx">
+                            <img src="../images/logo_semetra_mais.jpg" alt="Semetra.NET" style="border-radius: 10px; height: 55px;" />
+                        </a>
+                    </div>
+                    <div class="flex-item">
+                        <a href="http://www.semetranet.com.br/" target="_blank">Site Insitucional</a><br />
+                        <a href="http://webmail.semetranet.com.br" target="_blank">Web Mail</a>
+                    </div>
+                    <div class="flex-item">
+                        <span class="term">Usuário:<asp:Label ID="userLabel" runat="server" Text=""></asp:Label><br />
+                            IP:<asp:Label ID="ipLabel" runat="server" Text=""></asp:Label><br />
+                        </span>
+                    </div>
+                </div>
+            </asp:Panel>
+        </header>
+        <div id="main">
+            <nav>
+                <asp:Panel ID="menuPanel" runat="server">
+                    <asp:UpdatePanel ID="updatepanel" runat="server">
+                        <ContentTemplate>
+                            <cc1:ToolkitScriptManager ID="scriptmanager2" runat="server" />
+
+                            <cc1:Accordion
+                                ID="Accordion1"
+                                runat="server"
+                                FadeTransitions="true"
+                                SelectedIndex="0"
+                                TransitionDuration="250"
+                                HeaderCssClass="accordionHeader"
+                                ContentCssClass="accordionContent"
+                                AutoSize="Fill"
+                                FramesPerSecond="40"
+                                RequireOpenedPane="false"
+                                SuppressHeaderPostbacks="true">
+                                <Panes>
+                                    <cc1:AccordionPane ID="AccordionPane1" runat="server">
+                                        <Header>Cadastros</Header>
+                                        <Content>
+                                            <a href="WebConsultaForm.aspx?form=1">Consulta Clientes</a><br />
+                                            <a href="WebLoadModel.aspx?form=253">Consulta Fornecedores</a><br />
+                                            <a href="ConsultaPeca.aspx">Consulta Peças</a><br />
+                                        </Content>
+                                    </cc1:AccordionPane>
+
+                                    <cc1:AccordionPane ID="AccordionPane2" runat="server">
+                                        <Header>Consultas</Header>
+                                        <Content>
+                                            <asp:LinkButton ID="LinkButton10" runat="server">Clientes</asp:LinkButton><br />
+                                            <asp:LinkButton ID="LinkButton11" runat="server">Clientes</asp:LinkButton><br />
+                                        </Content>
+                                    </cc1:AccordionPane>
+
+                                    <cc1:AccordionPane ID="AccordionPane3" runat="server">
+                                        <Header>Manutenção</Header>
+                                        <Content>
+                                            <a href="WebConsultaForm.aspx?form=1">Consulta Clientes</a><br />
+                                            <asp:LinkButton ID="LinkButton19" runat="server">Clientes</asp:LinkButton><br />
+                                            <asp:LinkButton ID="LinkButton20" runat="server">Clientes</asp:LinkButton><br />
+                                        </Content>
+                                    </cc1:AccordionPane>
+
+                                </Panes>
+                            </cc1:Accordion>
+
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </asp:Panel>
+            </nav>
+            <article>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </article>
+        </div>
+
+        <footer>
+            <asp:Label ID="errorLabel" runat="server"></asp:Label>
+        </footer>
+    </form>
+</body>
+</html>
