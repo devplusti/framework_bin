@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ClienteModel.cs" />
     <Compile Include="cotapforneModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
