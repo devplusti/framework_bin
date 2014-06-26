@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<configuration>
+  <connection>
+    <name>semetra</name>
+    <server>srvhomolog.cipec.net</server>
+    <user>root</user>
+    <password>beleza</password>
+    <database>semetra</database>
+  </connection>
+</configuration>
