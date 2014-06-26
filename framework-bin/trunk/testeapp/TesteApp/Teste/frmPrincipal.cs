@@ -48,5 +48,10 @@ namespace Teste
         {
             
         }
+
+        private void funcionáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoadWindowsForm(278, sender);
+        }
     }
 }
