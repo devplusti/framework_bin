@@ -50,14 +50,17 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
     </Reference>
-    <Reference Include="FrameworkBLL">
-      <HintPath>..\..\framework-bin\Binarios\FrameworkBLL.dll</HintPath>
+    <Reference Include="FrameworkBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binarios\FrameworkBLL.dll</HintPath>
     </Reference>
-    <Reference Include="FrameworkModel">
-      <HintPath>..\..\framework-bin\Binarios\FrameworkModel.dll</HintPath>
+    <Reference Include="FrameworkModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binarios\FrameworkModel.dll</HintPath>
     </Reference>
-    <Reference Include="FrameworkUI">
-      <HintPath>..\..\framework-bin\Binarios\FrameworkUI.dll</HintPath>
+    <Reference Include="FrameworkUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binarios\FrameworkUI.dll</HintPath>
     </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -82,10 +85,6 @@
     <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Mono.Security.3.2.3.0\lib\net45\Mono.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Npgsql, Version=2.0.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\framework-bin\Binarios\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Services.Client" />
     <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -139,6 +138,8 @@
     </None>
     <Content Include="home.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="WebFormBase.aspx" />
+    <Content Include="WebLoadModel.aspx" />
     <Content Include="WebUI.Master" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +164,20 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebFormBase.aspx.cs">
+      <DependentUpon>WebFormBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormBase.aspx.designer.cs">
+      <DependentUpon>WebFormBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebLoadModel.aspx.cs">
+      <DependentUpon>WebLoadModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebLoadModel.aspx.designer.cs">
+      <DependentUpon>WebLoadModel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebUI.Master.cs">
       <DependentUpon>WebUI.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

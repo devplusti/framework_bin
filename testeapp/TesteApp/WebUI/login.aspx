@@ -54,7 +54,8 @@
             </h2>
             <p>Bem-Vindo, para acessar o sistema você precisa se autenticar.</p>
 
-            <%--            <input name='usuarioInput' type="text" class="input-block-level img-rounded" placeholder="Usuário">
+            <%--
+            <input name='usuarioInput' type="text" class="input-block-level img-rounded" placeholder="Usuário">
             <input name='senhaInput' type="password" class="input-block-level img-rounded" placeholder="Senha">
             --%>
             <asp:TextBox ID="loginTextBox" runat="server" CssClass="input-block-level img-rounded"></asp:TextBox>

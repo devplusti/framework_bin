@@ -75,6 +75,7 @@
             this.consultaDadosCadastraisToolStripMenuItem.Name = "consultaDadosCadastraisToolStripMenuItem";
             this.consultaDadosCadastraisToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.consultaDadosCadastraisToolStripMenuItem.Text = "Consulta Dados Cadastrais";
+            this.consultaDadosCadastraisToolStripMenuItem.Click += new System.EventHandler(this.consultaDadosCadastraisToolStripMenuItem_Click);
             // 
             // relatóriosToolStripMenuItem
             // 
