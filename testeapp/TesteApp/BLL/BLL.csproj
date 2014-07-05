@@ -91,7 +91,9 @@
     <Compile Include="Class1.cs" />
     <Compile Include="ClienteBLL.cs" />
     <Compile Include="cotapforneBLL.cs" />
+    <Compile Include="FuncliBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicoBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

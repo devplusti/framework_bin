@@ -162,7 +162,7 @@
             background-color: white;
             min-height: 65px;
             width: 60%;
-            text-align: end;
+            text-align: center;
         }
 
         .flex-item:nth-child(3) {
@@ -173,7 +173,7 @@
             background-color: black;
             width: 250px;
             min-height: 65px;
-            text-align: start;
+            text-align: center;
         }
 
 
@@ -327,9 +327,9 @@
                                     <cc1:AccordionPane ID="AccordionPane1" runat="server">
                                         <Header>Cadastros</Header>
                                         <Content>
-                                            <a href="WebConsultaForm.aspx?form=1">Consulta Clientes</a><br />
-                                            <a href="WebLoadModel.aspx?form=253">Consulta Fornecedores</a><br />
-                                            <a href="ConsultaPeca.aspx">Consulta Peças</a><br />
+                                            <a href="WebLoadModel.aspx?form=278">Consulta Clientes</a><br />
+                                            <a href="WebConsultaForm.aspx?form=1">Consulta Funcionários</a><br />
+                                            <a href="ConsultaPeca.aspx">Consulta Prontuários</a><br />
                                         </Content>
                                     </cc1:AccordionPane>
 

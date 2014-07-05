@@ -37,7 +37,7 @@ namespace Teste
 
             // NAO CONSIGO PEGAR OS DADOS DESTES CAMPOS
 
-            dtExameLabel.Text = dados.venc;
+            //dtExameLabel.Text = dados.venc;
             //dtPcmsoLabel.Text = dados.pcmso;
             //dtPpraLabel.Text = dados.ppra;
             //dtCipaLabel.Text = dados.cipa;

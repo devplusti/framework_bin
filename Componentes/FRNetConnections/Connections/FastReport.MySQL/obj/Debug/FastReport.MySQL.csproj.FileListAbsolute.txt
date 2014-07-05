@@ -1,0 +1,13 @@
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\obj\Debug\FastReport.Data.MySqlConnectionEditor.resources
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\obj\Debug\ResGen.read.1.tlog
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\obj\Debug\ResGen.write.1.tlog
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\bin\Debug\FastReport.MySQL.dll
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\bin\Debug\FastReport.MySQL.pdb
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\bin\Debug\FastReport.dll
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\bin\Debug\MySql.Data.dll
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\bin\Debug\FastReport.Bars.dll
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\bin\Debug\FastReport.Editor.dll
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\bin\Debug\FastReport.xml
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\obj\Debug\FastReport.MySQL.dll
+C:\Users\Clayton\Desktop\FastReport.Net\FastReport.Net\FRNetConnections\Connections\FastReport.MySQL\obj\Debug\FastReport.MySQL.pdb

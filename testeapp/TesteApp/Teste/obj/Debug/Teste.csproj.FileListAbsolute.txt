@@ -150,3 +150,4 @@ C:\Downloads\framework-bin\testeapp\TesteApp\Teste\obj\Debug\Teste.Form1.resourc
 C:\Downloads\framework-bin\testeapp\TesteApp\Teste\obj\Debug\Teste.frmPrincipal.resources
 C:\Downloads\framework-bin\testeapp\TesteApp\Teste\obj\Debug\Teste.Properties.Resources.resources
 C:\Downloads\framework-bin\testeapp\TesteApp\Teste\obj\Debug\Teste.csproj.GenerateResource.Cache
+D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\Teste\obj\Debug\Teste.rConsultaCadastro.resources
