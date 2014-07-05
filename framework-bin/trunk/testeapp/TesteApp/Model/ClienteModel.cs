@@ -1,4 +1,5 @@
 ﻿using FrameworkModel.Framework;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,7 +67,6 @@ namespace Model
         public string sr_deleted { get; set; }
         public string email_cob { get; set; }
         public string acesso_externo { get; set; }
-        public string indkey_001 { get; set; }
         public string numero { get; set; }
         public string comp { get; set; }
         public string numcor { get; set; }
@@ -77,5 +77,7 @@ namespace Model
         public string end_cor_ok { get; set; }
         public string cod_muni { get; set; }
         public string cod_muni_cor { get; set; }
+        public string indkey_001 { get; set; }
+        public string matriz { get; set; }
     }
 }

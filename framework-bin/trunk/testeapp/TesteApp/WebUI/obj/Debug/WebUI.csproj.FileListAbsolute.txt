@@ -1,5 +1,4 @@
 D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
-D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\bin\WebUI.dll.config
 D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\bin\WebUI.dll
 D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\bin\WebUI.pdb
 D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\bin\AjaxControlToolkit.dll
@@ -69,3 +68,8 @@ D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebU
 D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\bin\zh-Hant\System.Spatial.resources.dll
 D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\obj\Debug\WebUI.dll
 D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\obj\Debug\WebUI.pdb
+D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\bin\FrameworkBLL.dll
+D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\bin\FrameworkModel.dll
+D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\bin\FrameworkUI.dll
+D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\bin\Npgsql.dll
+D:\Users\clayt_000\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\WebUI\bin\WebUI.dll.config

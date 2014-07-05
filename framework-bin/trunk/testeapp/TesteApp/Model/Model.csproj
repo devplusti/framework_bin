@@ -82,7 +82,9 @@
     <Compile Include="Class1.cs" />
     <Compile Include="ClienteModel.cs" />
     <Compile Include="cotapforneModel.cs" />
+    <Compile Include="FuncliModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicoModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
