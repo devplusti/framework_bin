@@ -7,4 +7,11 @@
     <password>beleza</password>
     <database>homocipec</database>
   </connection>
+<connection>
+    <name>homologacao</name>
+    <server>semetra.dyns.net</server>
+    <user>root</user>
+    <password>beleza</password>
+    <database>desenv</database>
+  </connection>
 </configuration>

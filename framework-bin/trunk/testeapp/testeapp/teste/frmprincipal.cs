@@ -48,5 +48,16 @@ namespace Teste
         {
             
         }
+
+        private void funcionáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoadWindowsForm(278, sender);
+        }
+
+        private void consultaDadosCadastraisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rConsultaCadastro form = new rConsultaCadastro();
+            form.ShowDialog();
+        }
     }
 }

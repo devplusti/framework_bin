@@ -1,6 +1,6 @@
--- MySQL dump 10.13  Distrib 5.5.35, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.66, for debian-linux-gnu (x86_64)
 --
--- Host: mic.dyns.net    Database: nova
+-- Host: localhost    Database: nova
 -- ------------------------------------------------------
 -- Server version	5.1.66-0+squeeze1-log
 
@@ -26,6 +26,7 @@ CREATE TABLE `sys_report_data` (
   `recno` int(11) NOT NULL,
   `report` int(11) NOT NULL,
   `sql_data` text NOT NULL,
+  `data_name` varchar(45) NOT NULL,
   PRIMARY KEY (`recno`),
   KEY `fk_report` (`report`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
@@ -37,7 +38,7 @@ CREATE TABLE `sys_report_data` (
 
 LOCK TABLES `sys_report_data` WRITE;
 /*!40000 ALTER TABLE `sys_report_data` DISABLE KEYS */;
-INSERT INTO `sys_report_data` (`recno`, `report`, `sql_data`) VALUES (1,1,'select nome, fantasia from cliente');
+INSERT INTO `sys_report_data` VALUES (1,1,'select nome, fantasia, cgc, cidade, uf from cliente','cliente'),(0,1,'select formata_codigo(codigo) from pecas','pecas'),(2,1,'select codigo from mate','mate');
 /*!40000 ALTER TABLE `sys_report_data` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-05-31 10:56:52
+-- Dump completed on 2014-08-08  9:59:26
