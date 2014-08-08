@@ -1,6 +1,6 @@
--- MySQL dump 10.13  Distrib 5.5.35, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.66, for debian-linux-gnu (x86_64)
 --
--- Host: mic.dyns.net    Database: nova
+-- Host: localhost    Database: nova
 -- ------------------------------------------------------
 -- Server version	5.1.66-0+squeeze1-log
 
@@ -30,10 +30,11 @@ CREATE TABLE `sys_reports` (
   `usuario` int(11) NOT NULL,
   `formulario` int(10) NOT NULL,
   `file_name` varchar(250) CHARACTER SET latin1 NOT NULL,
+  `modo_pd` varchar(1) NOT NULL COMMENT 'P-Producao, D-Design',
   PRIMARY KEY (`recno`),
   UNIQUE KEY `pk_reports` (`recno`) USING BTREE,
   KEY `fk_formu` (`formulario`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +43,7 @@ CREATE TABLE `sys_reports` (
 
 LOCK TABLES `sys_reports` WRITE;
 /*!40000 ALTER TABLE `sys_reports` DISABLE KEYS */;
-INSERT INTO `sys_reports` (`recno`, `report_name`, `desc_report`, `public_`, `usuario`, `formulario`, `file_name`) VALUES (1,'Relatório de Teste','Teste de Inclusão',1,1,1,'Teste.frx');
+INSERT INTO `sys_reports` VALUES (1,'Relatório de Teste','Teste de Inclusão',1,1,1,'Novo.frx','D');
 /*!40000 ALTER TABLE `sys_reports` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-05-31 10:56:52
+-- Dump completed on 2014-08-08  9:58:47
