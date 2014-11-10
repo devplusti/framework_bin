@@ -1,17 +1,60 @@
 <?xml version="1.0"?>
 <configuration>
   <connection>
-    <name>homologacao</name>
-    <server>srvhomolog.cipec.net</server>
+    <name>DevPlus</name>
+    <server>indaia01.no-ip.info</server>
     <user>root</user>
     <password>beleza</password>
-    <database>homocipec</database>
+    <database>semetra</database>
+    <port>33806</port>
   </connection>
-<connection>
-    <name>homologacao</name>
-    <server>semetra.dyns.net</server>
+  <connection>
+    <name>MIC - Producao</name>
+    <server>10.0.0.199</server>
     <user>root</user>
     <password>beleza</password>
-    <database>desenv</database>
+    <database>nova</database>
+  </connection>
+  <connection>
+    <name>MIC - Producao Externo</name>
+    <server>189.38.23.215</server>
+    <user>root</user>
+    <password>beleza</password>
+    <database>nova</database>
+  </connection>
+  <connection>
+    <name>MIC - Homologacao</name>
+    <server>10.0.0.199</server>
+    <user>root</user>
+    <password>beleza</password>
+    <database>nova_teste</database>
+  </connection>
+  <connection>
+    <name>MIC - Homologacao Externo</name>
+    <server>189.38.23.215</server>
+    <user>root</user>
+    <password>beleza</password>
+    <database>nova_teste</database>
+  </connection>
+  <connection>
+    <name>Servidor Virtual</name>
+    <server>10.0.0.245</server>
+    <user>root</user>
+    <password>beleza</password>
+    <database>nova</database>
+  </connection>
+  <connection>
+    <name>Servidor 2</name>
+    <server>192.168.0.198</server>
+    <user>root</user>
+    <password>Gd5feder@l</password>
+    <database>homolog</database>
+  <connection>
+    <name>Semetra Local</name>
+    <server>192.168.0.4</server>
+    <user>root</user>
+    <password>beleza</password>
+    <database>semetra</database>
+  </connection>
   </connection>
 </configuration>

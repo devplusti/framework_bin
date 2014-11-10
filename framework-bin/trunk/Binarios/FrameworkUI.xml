@@ -1,0 +1,817 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkUI</name>
+    </assembly>
+    <members>
+        <member name="F:FrameworkUI.frmBase.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmBase.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmBase.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.frmBase.Modelo">
+            <summary>
+            Modelo ultilizado, usando Form Built-in
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.frmBase.EditModel">
+            <summary>
+            Indica se é uma edição de modelos do Framework
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.frmBase.LastChoice">
+            <summary>
+            Indica qual menu será chamado quando o formulário for fechado
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.frmBase.Peca">
+            <summary>
+            Propriedade é preenchida quando o campo 'need_peca' do formulário é true
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.frmBase.ParamForm">
+            <summary>
+            Indica se o formulario é uma tela de paramentros,
+            Caso sim, não é verificado pela rotina CheckSysPermission().
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmAddFavorito.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmAddFavorito.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmAddFavorito.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmCadastraModelo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmCadastraModelo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmCadastraModelo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmConfig.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmConfig.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmConfig.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmConsultaFavoritos.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmConsultaFavoritos.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmConsultaFavoritos.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmConsultaModelo.LoadData">
+            <summary>
+            Carrega os dados referente a Entidade do Modelo selecionado
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmConsultaModelo.pesquisaCampo_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento para filtros
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:FrameworkUI.frmConsultaModelo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmConsultaModelo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmConsultaModelo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.frmConsultaModelo.CustomParam">
+            <summary>
+            ALtera a instrução SQL enviada ao Framework 
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.frmConsultaModelo.ColunaRecno">
+            <summary>
+            Coluna base para operações no Grid (Chave Primária no BD)
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmEnviaBug.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmEnviaBug.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmEnviaBug.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmErroHandler.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmErroHandler.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmErroHandler.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmInfData.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmInfData.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmInfData.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmInformaPeca.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmInformaPeca.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmInformaPeca.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmInputBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmInputBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmInputBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.frmInputBox.Sugest">
+            <summary>
+            Texto sujestivo na inicialização
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmInspector.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmInspector.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmInspector.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmLockUp.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmLockUp.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmLockUp.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmLogin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmLogin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmLogin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmOrdernarModelo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmOrdernarModelo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmOrdernarModelo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:FrameworkUI.frmParser.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.frmParser.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FrameworkUI.frmParser.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:FrameworkUI.ReflectionHelper.GetEventInvoker(System.Object,System.String)">
+            <summary> 
+            Gets method that will be invoked the event is raised. 
+            </summary> 
+            <param name="obj">Object that contains the event.</param> 
+            <param name="eventName">Event Name.</param> 
+            <returns></returns> 
+        </member>
+        <member name="T:FrameworkUI.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources._lock">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.about">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.about1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.address_book2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Alert_or_Warning_1_16_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Alert_or_Warning_2_24_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Alert_or_Warning_2_48_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.arrow_right_green">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.box_closed">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.bullet_ball_glass_green">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.bullet_ball_glass_red">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.bullet_ball_glass_yellow">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.businessman_preferences">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.chart">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.close">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Cog_2_48_d_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Cog_2_48_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Cog_48_n_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.document_edit">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.document_edit1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.document_into">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Document_Settings_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.document_text">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.document_text1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.document_view">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.documents_new">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.error">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.error1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Favorites_Yellow_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Filter_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Filter_32_h_p1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Filter_Up_16_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Find_Document_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.folder_up">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Font_16_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Forbid_Sign_2_16_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.forbidden">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Forward_Mail_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.fundo">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.fundo1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.fundo2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.gear">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.gear_view">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.gear1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.gears">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Green_Checkmark_16_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.information32">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Invoice_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Key_16_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Key_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Light_Black_Round_48_n_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Light_Green_Round_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Light_Green_Round_48_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Light_Red_Round_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Light_Red_Round_48_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Light_Yellow_Round_48_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.lock1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.mail">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.mail_earth">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.mail_earth1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Mic_20anos">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Mic_20anos1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Mic_20anos2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.monitor2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Options_3_48_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.oszillograph">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.package">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Parcel_48_n_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.pin_blue">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Printer_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Printer_48_n_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.printer_preferences">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.printer_preferences1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Refresh_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Refresh_Document_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Report___Histogram_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Save_Blue_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.skin">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.skin_bmp">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.star_yellow">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.star_yellow_add">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.star_yellow1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.stopwatch">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Task_Done_48_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.Task_List_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.telescope">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.transform2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.User_Group_1_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.view">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.View_Document_1_16_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:FrameworkUI.Properties.Resources.View_Folder_32_h_p">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
