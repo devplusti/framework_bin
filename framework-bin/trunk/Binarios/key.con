@@ -1,6 +1,13 @@
 <?xml version="1.0"?>
 <configuration>
   <connection>
+    <name>CIPEC - Homologacao</name>
+    <server>srvhomolog.cipec.net</server>
+    <user>root</user>
+    <password>beleza</password>
+    <database>homocipec</database>
+  </connection>
+  <connection>
     <name>DevPlus</name>
     <server>indaia01.no-ip.info</server>
     <user>root</user>
