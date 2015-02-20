@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkModel</name>
+    </assembly>
+    <members>
+        <member name="M:FrameworkModel.Framework.Model.Clone">
+            <summary>
+            Clone de Instâncias!
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkModel.Param">
+            <summary>
+            Classe de Parâmetros de Tela
+            </summary>
+        </member>
+    </members>
+</doc>
