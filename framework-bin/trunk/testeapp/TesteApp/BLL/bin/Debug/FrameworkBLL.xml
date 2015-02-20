@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkBLL</name>
+    </assembly>
+    <members>
+        <member name="M:FrameworkBLL.Framework.BLL`1.FGetCustom(System.String)">
+            <summary>
+            Retorna uma lista tipada de objetos (não necessita de cast)
+            </summary>
+            <param name="_customParam">Parametros para consulta SQL</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkBLL.Framework.BLL`1.FGet">
+            <summary>
+            Retorna lista de objetos tipados
+            </summary>
+            <returns>Lista tipada de Models</returns>
+        </member>
+        <member name="M:FrameworkBLL.Framework.BLL`1.FLockup(FrameworkModel.Framework.Model,System.String)">
+            <summary>
+            Gera Lockup de tabelas do banco.
+            O nome das tabelas mencionados nos modelos são usados para a criação das consultas SQL
+            </summary>
+            <param name="classModule">Modelo</param>
+            <param name="parteNome">Parametro para a pesquisa</param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkBLL.PecasBLL">
+            <summary>
+            Classe de Negócios do modelo de Peças
+            </summary>
+        </member>
+        <member name="T:FrameworkBLL.SessionBLL">
+            <summary>
+            Classe de controle de sessão e iteração entre usuários
+            Código de comandos enviados:
+            0 - Nada.
+            1 - Fecha o Sistema Imediatamente.
+            2 - Envia Mensagem para o Usuário com Direito de Resposta.
+            3 - Captura Bitmap da Tela Atual do Usuário.
+            4 - Notifica o Usuário sobre Pedidos de Compras
+            5 - Notifica o Usuário sobre Mensagens não respondidas
+            </summary>
+        </member>
+        <member name="M:FrameworkBLL.Utils.GetXml">
+            Geração de arquvivos XML
+            02/05/2014
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:FrameworkBLL.Utils.IsPasswordStrong(System.String)" -->
+        <member name="M:FrameworkBLL.Utils.CreateTable(System.Data.DataView)">
+            <summary>
+            Converte DataView para DataTable
+            </summary>
+            <param name="obDataView"></param>
+            <returns></returns>
+        </member>
+        <member name="F:FrameworkBLL.Utils.DataGridViewColumnSelector.MaxHeight">
+            <summary>
+            The max height of the popup
+            </summary>
+        </member>
+        <member name="F:FrameworkBLL.Utils.DataGridViewColumnSelector.Width">
+            <summary>
+            The width of the popup
+            </summary>
+        </member>
+        <member name="P:FrameworkBLL.Utils.DataGridViewColumnSelector.DataGridView">
+            <summary>
+            Gets or sets the DataGridView to which the DataGridViewColumnSelector is attached
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkDAL</name>
+    </assembly>
+    <members>
+        <member name="T:FrameworkDAL.Postgres.ConnectionManager">
+            <summary>
+            Gerenciador de Conexões com o Banco de Dados
+            </summary>
+        </member>
+        <member name="M:FrameworkDAL.Postgres.ConnectionManager.conectar">
+            <summary>
+            Conexao com o banco
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.Postgres.ConnectionManager.insert(System.String,System.Collections.Generic.List{Npgsql.NpgsqlParameter})">
+            <summary>
+            Metodo Insert Generico
+            </summary>
+            <param name="p_sql">String com o comando SQL</param>
+            <param name="p_listParams">Lista com os parametros</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.Postgres.ConnectionManager.delete(System.String,System.Collections.Generic.List{Npgsql.NpgsqlParameter})">
+            <summary>
+            Metodo delete Generico
+            </summary>
+            <param name="p_sql">String com o comando SQL</param>
+            <param name="p_listParam">Lista com os parametros</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.Postgres.ConnectionManager.consultaDt(System.String)">
+            <summary>
+            Metodo que retorna uma consulta especifica
+            </summary>
+            <param name="p_sql">Comando SQL</param>
+            <returns>DataTable com resultado</returns>
+        </member>
+        <member name="M:FrameworkDAL.Postgres.ConnectionManager.consultaDt(System.String,System.Collections.Generic.List{Npgsql.NpgsqlParameter})">
+            <summary>
+            Metodo que retorna uma consulta especifica
+            </summary>
+            <param name="p_sql">Comando SQL</param>
+            <param name="p_params">Parametros</param>
+            <returns>DataTable com resultado</returns>
+        </member>
+        <member name="M:FrameworkDAL.Postgres.ConnectionManager.logar(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Metodo Obrigatorio para Login do Usuario no sistema
+            </summary>
+            <param name="p_sql">Comando SQL</param>
+            <param name="list">Parametros</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.Postgres.ConnectionManager.getConnectionString">
+            <summary>
+            Obter ConnectionString a partir de um XML
+            </summary>
+            <returns>Connection String</returns>
+        </member>
+        <member name="M:FrameworkDAL.Postgres.ConnectionManager.testConnection(System.String)">
+            <summary>
+            Metodo que testa a conexao com o banco, e retorna todos os BDs
+            </summary>
+            <param name="connectionString">String de Conexao</param>
+            <returns>Listaa com nome dos Bds</returns>
+        </member>
+        <member name="M:FrameworkDAL.Postgres.ConnectionManager.executeScalar(System.String)">
+            <summary>
+            Executa um comando e retorna apenas um Object
+            </summary>
+            <param name="p_sql">Comando SQL</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.Postgres.ConnectionManager.executeScalar(System.String,System.Collections.Generic.List{Npgsql.NpgsqlParameter})">
+            <summary>
+            Executa um comando e retorna apenas um Object
+            </summary>
+            <param name="p_sql">Comando SQL</param>
+            <param name="p_params">Parametro</param>
+            <returns></returns>
+        </member>
+        <member name="P:FrameworkDAL.Postgres.ConnectionManager.ConnectionString">
+            <summary>
+            ConectionString Atual
+            </summary>
+        </member>
+        <member name="T:FrameworkDAL.MySql.ConnectionManager">
+            <summary>
+            Classe de Gerenciamento de Conexões com o Banco de Dados.
+            </summary>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.conectar">
+            <summary>
+            Conexao com o banco
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.InsertWitchKey(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Metodo Insert Generico com Retorno de Chave Primária
+            </summary>
+            <param name="p_sql">String com o comando SQL</param>
+            <param name="p_listParams">Lista com os parametros</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.insert(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Metodo Insert Generico
+            </summary>
+            <param name="p_sql">String com o comando SQL</param>
+            <param name="p_listParams">Lista com os parametros</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.delete(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Metodo delete Generico
+            </summary>
+            <param name="p_sql">String com o comando SQL</param>
+            <param name="p_listParam">Lista com os parametros</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.Transaction(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Executa comandos dentro de Transações no BD
+            </summary>
+            <param name="p_sql"></param>
+            <param name="p_listParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.consultaDt(System.String)">
+            <summary>
+            Metodo que retorna uma consulta especifica
+            </summary>
+            <param name="p_sql">Comando SQL</param>
+            <returns>DataTable com resultado</returns>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.consultaDt(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Metodo que retorna uma consulta especifica
+            </summary>
+            <param name="p_sql">Comando SQL</param>
+            <param name="p_params">Parametros</param>
+            <returns>DataTable com resultado</returns>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.logar(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Metodo Obrigatorio para Login do Usuario no sistema
+            </summary>
+            <param name="p_sql">Comando SQL</param>
+            <param name="list">Parametros</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.getConnectionString">
+            <summary>
+            Obter ConnectionString a partir de um XML
+            </summary>
+            <returns>Connection String</returns>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.testConnection(System.String)">
+            <summary>
+            Metodo que testa a conexao com o banco, e retorna todos os BDs
+            </summary>
+            <param name="connectionString">String de Conexao</param>
+            <returns>Listaa com nome dos Bds</returns>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.executeScalar(System.String)">
+            <summary>
+            Executa um comando e retorna apenas um Object
+            </summary>
+            <param name="p_sql">Comando SQL</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.MySql.ConnectionManager.executeScalar(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Executa um comando e retorna apenas um Object
+            </summary>
+            <param name="p_sql">Comando SQL</param>
+            <param name="p_params">Parametro</param>
+            <returns></returns>
+        </member>
+        <member name="P:FrameworkDAL.MySql.ConnectionManager.ConnectionString">
+            <summary>
+            ConectionString Atual
+            </summary>
+        </member>
+        <member name="M:FrameworkDAL.Access.ConnectionManager.insert(System.String,System.Collections.Generic.List{System.Data.OleDb.OleDbParameter})">
+            <summary>
+            Metodo Insert Generico
+            </summary>
+            <param name="p_sql">String com o comando SQL</param>
+            <param name="p_listParams">Lista com os parametros</param>
+            <returns></returns>
+        </member>
+        <member name="F:FrameworkDAL.Framework.DAL`1._explainSql">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FrameworkDAL.Framework.DAL`1.FrameworkExecuteProcedure(System.String)">
+            <summary>
+            Executa StoreProcedure existente no BD
+            </summary>
+            <param name="proc_name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.Framework.DAL`1.FrameworkInsert(FrameworkModel.Framework.Model)">
+            <summary>
+            Método de persistência genérico, ultiliza reflection para leitura das propriedades
+            </summary>
+            <param name="classModule">Pode ser qualquer classe de modelo herdada de 
+            Model.Framework.Model 
+            </param>
+            <returns>Resultado da Operação</returns>
+        </member>
+        <member name="M:FrameworkDAL.Framework.DAL`1.FrameworkUpdate(FrameworkModel.Framework.Model)">
+            <summary>
+             Método de update genérico, ultiliza reflection para leitura das propriedades
+            </summary>
+            <param name="classModule">Pode ser qualquer classe de modelo herdada de 
+            Model.Framework.Model </param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.Framework.DAL`1.FrameworkDelete(FrameworkModel.Framework.Model)">
+            <summary>
+             Método de delete genérico, ultiliza reflection para leitura das propriedades
+            </summary>
+            <param name="classModule">Pode ser qualquer classe de modelo herdada de 
+            Model.Framework.Model </param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.Framework.DAL`1.FrameworkGet(FrameworkModel.Framework.Model)">
+            <summary>
+             Método de leitura, ultiliza reflection para preenchimento das propriedades
+            </summary>
+            <param name="classModule">Pode ser qualquer classe de modelo herdada de 
+            Model.Framework.Model </param>
+            <returns></returns>
+        </member>
+        <member name="P:FrameworkDAL.Framework.DAL`1.LastInsertID">
+            <summary>
+            Retorna o ID do ultimo registro incluido da sessão ativa
+            </summary>
+        </member>
+        <member name="P:FrameworkDAL.Framework.DAL`1.ExplainSql">
+            <summary>
+            Guarda o último comando Sql executado
+            </summary>
+        </member>
+        <member name="P:FrameworkDAL.Framework.DAL`1.OnlyFirstResult">
+            <summary>
+            Caso setada como Verdadeira, retorna apenas o primeiro 
+            resultado da consulta.
+            </summary>
+        </member>
+        <member name="P:FrameworkDAL.Framework.DAL`1.CustomWhere">
+            <summary>
+            Envia uma instrução sql como parametro
+            </summary>
+        </member>
+        <member name="P:FrameworkDAL.Framework.DAL`1.CustomOrder">
+            <summary>
+            Ordena os registros de forma customizada
+            </summary>
+        </member>
+        <member name="T:FrameworkDAL.PecasDAL">
+            <summary>
+            Modelo de persistência no banco entidade 'PECAS'
+            </summary>
+        </member>
+        <member name="M:FrameworkDAL.PecasDAL.GetLastPrice(System.String,System.String)">
+            <summary>
+            Retorna o Útimo preço pago no produto pelo cliente.
+            </summary>
+            <param name="codCliente"></param>
+            <param name="peca"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.PecasDAL.InsertAnalise(System.String,System.String,System.DateTime)">
+            <summary>
+            Inclui os codigos digitados não cadastraos no sistema.
+            </summary>
+            <param name="usuario"></param>
+            <param name="peca"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.PecasDAL.GetDescByCod(System.String)">
+            <summary>
+            Retorna o código completo do MIC
+            </summary>
+            <param name="codPeca"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.PecasDAL.GetPrecoLista(System.String)">
+            <summary>
+            Retorna o preco de lista para a peça.
+            </summary>
+            <param name="codPeca">Código interno da Peça</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.PecasDAL.ValorMedioVenda(System.DateTime,System.DateTime,System.String)">
+            <summary>
+            Calcula o valor médio de venda da peça
+            </summary>
+            <param name="inicial">Data Inicial Para o Cálculo</param>
+            <param name="final">Data Final Para o Cálculo</param>
+            <param name="codPeca">Código da Peça</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.PecasDAL.GetPAPP">
+            <summary>
+            Retorna Informações de Pedidos PAPP.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkDAL.PecasDAL.Clear(System.Int64)">
+            <summary>
+            Retira a peca de qualquer conjunto
+            </summary>
+            <param name="CodConj"></param>
+        </member>
+        <member name="M:FrameworkDAL.UsuariosDAL.LoockUpVend(System.String)">
+            <summary>
+            Retorna o código do Vendedor
+            </summary>
+            <param name="parteNome"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
