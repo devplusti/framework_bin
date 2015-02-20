@@ -128,3 +128,11 @@ C:\Users\Clayton\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\Model\
 C:\Users\Clayton\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\Clayton\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\Model\obj\Debug\Model.dll
 C:\Users\Clayton\Documents\Projetos\Framework_bin\trunk\testeapp\TesteApp\Model\obj\Debug\Model.pdb
+C:\dev_plus\framework_bin\trunk\testeapp\TesteApp\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\dev_plus\framework_bin\trunk\testeapp\TesteApp\Model\obj\Debug\Model.dll
+C:\dev_plus\framework_bin\trunk\testeapp\TesteApp\Model\obj\Debug\Model.pdb
+C:\dev_plus\framework_bin\trunk\testeapp\TesteApp\Model\bin\Debug\Model.dll
+C:\dev_plus\framework_bin\trunk\testeapp\TesteApp\Model\bin\Debug\Model.pdb
+C:\dev_plus\framework_bin\trunk\testeapp\TesteApp\Model\bin\Debug\FrameworkModel.dll
+C:\dev_plus\framework_bin\trunk\testeapp\TesteApp\Model\bin\Debug\FrameworkModel.pdb
+C:\dev_plus\framework_bin\trunk\testeapp\TesteApp\Model\bin\Debug\FrameworkModel.xml

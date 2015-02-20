@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.funcionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaDadosCadastraisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.parserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cotapForneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.funcionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaDadosCadastraisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,44 @@
             this.menuStrip1.Size = new System.Drawing.Size(1174, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // testeToolStripMenuItem
+            // 
+            this.testeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.testeToolStripMenuItem1,
+            this.parserToolStripMenuItem,
+            this.cotapForneToolStripMenuItem,
+            this.usuáriosToolStripMenuItem});
+            this.testeToolStripMenuItem.Name = "testeToolStripMenuItem";
+            this.testeToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.testeToolStripMenuItem.Text = "Manutenção";
+            // 
+            // testeToolStripMenuItem1
+            // 
+            this.testeToolStripMenuItem1.Name = "testeToolStripMenuItem1";
+            this.testeToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.testeToolStripMenuItem1.Text = "Formulários";
+            this.testeToolStripMenuItem1.Click += new System.EventHandler(this.testeToolStripMenuItem1_Click);
+            // 
+            // parserToolStripMenuItem
+            // 
+            this.parserToolStripMenuItem.Name = "parserToolStripMenuItem";
+            this.parserToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.parserToolStripMenuItem.Text = "Parser";
+            this.parserToolStripMenuItem.Click += new System.EventHandler(this.parserToolStripMenuItem_Click);
+            // 
+            // cotapForneToolStripMenuItem
+            // 
+            this.cotapForneToolStripMenuItem.Name = "cotapForneToolStripMenuItem";
+            this.cotapForneToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cotapForneToolStripMenuItem.Text = "CotapForne";
+            this.cotapForneToolStripMenuItem.Click += new System.EventHandler(this.cotapForneToolStripMenuItem_Click);
+            // 
+            // usuáriosToolStripMenuItem
+            // 
+            this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuáriosToolStripMenuItem.Text = "Usuários";
             // 
             // cadastrosToolStripMenuItem
             // 
@@ -68,58 +106,18 @@
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
             this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.funcionáriosToolStripMenuItem.Text = "Funcionários";
-            this.funcionáriosToolStripMenuItem.Click += new System.EventHandler(this.funcionáriosToolStripMenuItem_Click);
             // 
             // consultaDadosCadastraisToolStripMenuItem
             // 
             this.consultaDadosCadastraisToolStripMenuItem.Name = "consultaDadosCadastraisToolStripMenuItem";
             this.consultaDadosCadastraisToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.consultaDadosCadastraisToolStripMenuItem.Text = "Consulta Dados Cadastrais";
-            this.consultaDadosCadastraisToolStripMenuItem.Click += new System.EventHandler(this.consultaDadosCadastraisToolStripMenuItem_Click);
             // 
             // relatóriosToolStripMenuItem
             // 
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
             this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
-            // 
-            // testeToolStripMenuItem
-            // 
-            this.testeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.testeToolStripMenuItem1,
-            this.parserToolStripMenuItem,
-            this.cotapForneToolStripMenuItem,
-            this.usuáriosToolStripMenuItem});
-            this.testeToolStripMenuItem.Name = "testeToolStripMenuItem";
-            this.testeToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.testeToolStripMenuItem.Text = "Manutenção";
-            // 
-            // testeToolStripMenuItem1
-            // 
-            this.testeToolStripMenuItem1.Name = "testeToolStripMenuItem1";
-            this.testeToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
-            this.testeToolStripMenuItem1.Text = "Formulários";
-            this.testeToolStripMenuItem1.Click += new System.EventHandler(this.testeToolStripMenuItem1_Click);
-            // 
-            // parserToolStripMenuItem
-            // 
-            this.parserToolStripMenuItem.Name = "parserToolStripMenuItem";
-            this.parserToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.parserToolStripMenuItem.Text = "Parser";
-            this.parserToolStripMenuItem.Click += new System.EventHandler(this.parserToolStripMenuItem_Click);
-            // 
-            // cotapForneToolStripMenuItem
-            // 
-            this.cotapForneToolStripMenuItem.Name = "cotapForneToolStripMenuItem";
-            this.cotapForneToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.cotapForneToolStripMenuItem.Text = "CotapForne";
-            this.cotapForneToolStripMenuItem.Click += new System.EventHandler(this.cotapForneToolStripMenuItem_Click);
-            // 
-            // usuáriosToolStripMenuItem
-            // 
-            this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.usuáriosToolStripMenuItem.Text = "Usuários";
             // 
             // frmPrincipal
             // 
