@@ -56,8 +56,8 @@ namespace Teste
 
         private void consultaDadosCadastraisToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //rConsultaCadastro form = new rConsultaCadastro();
-            //form.ShowDialog();
+            rConsultaCadastro form = new rConsultaCadastro();
+            form.ShowDialog();
         }
     }
 }

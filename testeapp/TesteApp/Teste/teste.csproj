@@ -36,17 +36,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FrameworkBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Binarios\FrameworkBLL.dll</HintPath>
+    <Reference Include="frameworkbll">
+      <HintPath>..\..\..\binarios\frameworkbll.dll</HintPath>
     </Reference>
-    <Reference Include="FrameworkModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Binarios\FrameworkModel.dll</HintPath>
+    <Reference Include="frameworkdal">
+      <HintPath>..\..\..\binarios\frameworkdal.dll</HintPath>
     </Reference>
-    <Reference Include="FrameworkUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Binarios\FrameworkUI.dll</HintPath>
+    <Reference Include="frameworkmodel">
+      <HintPath>..\..\..\binarios\frameworkmodel.dll</HintPath>
+    </Reference>
+    <Reference Include="frameworkui">
+      <HintPath>..\..\..\binarios\frameworkui.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

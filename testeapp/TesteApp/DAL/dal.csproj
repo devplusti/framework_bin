@@ -40,13 +40,13 @@
     <Reference Include="AjaxMin">
       <HintPath>..\packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
     </Reference>
-    <Reference Include="FrameworkBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Binarios\FrameworkBLL.dll</HintPath>
-    </Reference>
     <Reference Include="FrameworkDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Binarios\FrameworkDAL.dll</HintPath>
+      <HintPath>..\..\framework-bin\Binarios\FrameworkDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameworkModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\framework-bin\Binarios\FrameworkModel.dll</HintPath>
     </Reference>
     <Reference Include="HtmlAgilityPack">
       <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
@@ -82,7 +82,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ClienteDAL.cs" />
+    <Compile Include="cotapforneDAL.cs" />
+    <Compile Include="FuncliDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicoDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
